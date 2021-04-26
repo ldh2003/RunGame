@@ -25,7 +25,7 @@ public class Platform : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collsion)
     {
-        if (collsion.collider.tag == "player" && !stepped)
+        if (collsion.collider.tag == "Player" && !stepped)
         {
             stepped = true;
             GameManager.instance.AddScore(1);
